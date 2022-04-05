@@ -3,50 +3,7 @@
 // * To change this template file, choose Tools | Templates
 // * and open the template in the editor.
 // */
-//package com.code.blog.dao;
-//
-///**
-// *
-// * @author Rohit
-// */
-//import java.sql.*;
-//public class UserDao {
-//    private Connection con;
-//
-//    public UserDao(Connection con) {
-//        this.con = con;
-//    }
-//    
-//    //to insert data into db
-//    public boolean saveUser(User user)
-//    {
-//        boolean f=false;
-//        try
-//        {
-//            
-//            String query="insert into user(name,email,password,gender,about)values (?,?,?,?,?)";
-//            PrepareStatement pstmt=this.con.prepareStatement(query);
-//            pstmt.setString(1, user.getName());
-//            pstmt.setString(1, user.getEmail());
-//            pstmt.setString(1, user.getPassword());
-//            pstmt.setString(1, user.getGender());
-//            pstmt.setString(1, user.getAbout());
-//            
-//            pstmt.executeUpdate();
-//            f=true;
-//        }catch(Exception e)
-//        {
-//            e.printStackTrace();
-//        }
-//        return f;
-//    }
-//    
-//}
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.code.blog.dao;
 
 import com.code.blog.entities.User;
